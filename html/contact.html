@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Thực hành web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div id="top"></div>
+    <div class="wrapper">
+
+        <!-- Header   -->
+        <header class="header">
+            <div class="header__content">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a href="index.html">
+                            <img src="/imgs/logo.svg" alt="" class="logo-img">
+                        </a>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="header__content-right">
+                            <div class="search-box">
+                                <form action="" class="search__container">
+                                    <input type="text" class="search__input" placeholder="Bạn muốn tìm gì..">
+                                    <i class="bi bi-search"></i>
+                                </form>
+                            </div>
+
+                            <div class="auth-container">
+                                <div class="item">
+                                    <i class="bi bi-bag"></i>
+                                    <span>Giỏ hàng</span>
+                                </div>
+                                <div class="item">
+                                    <button class="btn " data-bs-toggle="modal" data-bs-target="#myModalLogin"><i
+                                            class="bi bi-person-circle"></i>
+                                        <span>Đăng nhập</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="main-contact">
+            <div class="row">
+
+                <!-- Danh mục -->
+                <div class="col-lg-3">
+                    <div class="side-nav">
+
+                        <div class="side-nav__items">
+                            <a href="#brand" data-bs-toggle="collapse">
+                                <i class="bi bi-phone">Thương hiệu</i>
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <ul id="brand" class="collapse">
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Samsung</a></li>
+                                <li><a href="#">Xiaomi</a></li>
+                                <li><a href="#">Oppo</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="side-nav__items">
+                            <a href="#status" data-bs-toggle="collapse">
+                                <i class="bi bi-phone-flip"> Hàng cũ</i>
+
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <ul id="status" class="collapse">
+                                <li><a href="#">Cũ Đẹp</a></li>
+                                <li><a href="#">Cũ Trầy Xước</a></li>
+                                <li><a href="#">Cũ Xước Cấn</a></li>
+                                <li><a href="#">Cũ Lướt</a></li>
+                            </ul>
+                        </div>
+                        <div class="side-nav__items">
+                            <a href="index.html">
+                                <i class="bi bi-newspaper"> Tin tức</i>
+
+                            </a>
+                        </div>
+                        <div class="side-nav__items">
+                            <a href="index.html">
+                                <i class="bi bi-gear-wide-connected"> Dịch vụ</i>
+
+                            </a>
+                        </div>
+                        <div class="side-nav__items">
+                            <a href="index.html">
+                                <i class="bi bi-person-lines-fill"> Liên hệ</i>
+
+                            </a>
+                        </div>
+                        <div class="side-nav__items">
+                            <a href="index.html">
+                                <i class="bi bi-info-square"> Về chúng tôi</i>
+
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="col-lg-9">
+                    <div class="main-content">
+
+                        <div class="contact-container">
+                            <div class="contact-info">
+                                <h5>
+                                    <img src="/imgs/logo.svg" alt="" class="logo">
+                                    TechSphere
+                                </h5>
+                                <span>
+                                    <i class="bi bi-telephone"></i>
+                                    02838505520
+                                </span>
+                                <span>
+                                    <i class="bi bi-envelope"></i>
+                                    info@techsphere.com
+                                </span>
+                                <span>
+                                    <i class="bi bi-pin-map"></i>
+                                    180 Đ. Cao Lỗ, Phường 4, Quận 8, Thành phố Hồ Chí Minh, Việt Nam
+                                </span>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.954410780179!2d106.67296118443285!3d10.737997162098901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e5dbd%3A0x674d5126513db295!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgU8OgaSBHw7Ju!5e0!3m2!1svi!2s!4v1716965777145!5m2!1svi!2s"
+                                    allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="contact-form">
+                                <form action="/submit_form" method="post" class="form-contact">
+                                    <div class="form-item-1">
+                                        <input type="text" name="name" placeholder="Họ và tên" required>
+                                        <input type="tel" name="phone" placeholder="Số điện thoại" required>
+                                    </div>
+
+                                    <div class="form-item-1">
+                                        <input type="text" name="address" placeholder="Địa chỉ" required>
+                                        <input type="email" name="email" placeholder="Email" required>
+                                    </div>
+
+                                    <input type="text" name="subject" placeholder="Tiêu đề" required>
+
+                                    <textarea name="message" placeholder="Nội dung" required></textarea>
+
+
+                                    <input type="submit" value="Gửi" class="btn-submit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-intro item">
+                <h5>
+                    <img src="/imgs/logo.svg" alt="" class="logo">
+                    TechSphere
+                </h5>
+                <p>
+                    Chào mừng bạn đến với TechSphere – điểm đến lý tưởng cho những ai yêu thích công nghệ di động.
+                    Tại
+                    TechSphere, chúng tôi cung cấp đa dạng các loại điện thoại thông minh, phụ kiện và các thiết bị
+                    công
+                    nghệ tiên tiến nhất. Bộ sưu tập của chúng tôi bao gồm các thương hiệu hàng đầu và những mẫu mới
+                    nhất,
+                    đảm bảo bạn luôn được tiếp cận với những sản phẩm tốt nhất trên thị trường.
+                </p>
+
+                <h3> Kết nối với CellphoneS </h3>
+            </div>
+            <div class="categories item">
+                <h3>
+                    Danh mục sản phẩm
+                </h3>
+                <ul>
+                    <li>
+                        <a href="">
+                            Điện thoại
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Phụ kiện
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Hàng cũ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fast-link item">
+                <h3>
+                    Truy cập nhanh
+                </h3>
+                <ul>
+                    <li>
+                        <a href="">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Dịch vụ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Khuyến mãi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Liên hệ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Về chúng tôi
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="Policy item">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li>
+                        <a href="">
+                            Thu cũ đổi mới
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Bảo hành
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Đổi trả
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Hướng dẫn thanh toán
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Bảo mật thông tin
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bot">
+            Copyright © 2017 All Rights Reserved by Kierab Tran.
+        </div>
+    </footer>
+    </div>
+
+
+
+    <!-- The Modal Login-->
+    <div class="modal" id="myModalLogin">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <img src="/imgs/logo_blue.svg" alt="">
+                    <h5 class="modal-title active">
+                        Đăng nhập
+                        <span data-bs-toggle="modal" data-bs-target="#myModalSignUp"
+                            style="color: black; ">/Đăngký</span>
+                    </h5>
+
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="">
+                        <div class="modal-input">
+                            <input type="email" placeholder="Nhập địa chỉ Email">
+                        </div>
+                        <div class="modal-input">
+                            <input type="password" placeholder="Nhập mật khẩu">
+                        </div>
+                    </form>
+                    <div class="forget-pw">
+                        <p>Quên mật khẩu?</p>
+                    </div>
+                    <div class=" btn btn-submit ">Đăng nhập</div>
+                    <span style="margin: 10px;">Hoặc</span>
+                    <div class="social-link">
+                        <a href=""><img src="/imgs/Facebook.svg" alt="Facebook_Logo"></a>
+                        <a href=""><img src="/imgs/Google.svg" alt="Google_Logo"></a>
+                        <a href=""><img src="/imgs/Apple.svg" alt="Apple_Logo"></a>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <p>Việc đăng nhập hoặc tạo tài khoản, bạn đồng ý với các <a href="">Điều khoản</a>
+                        và <a href="">Điều
+                            kiện</a> cũng như <a href="">Chính sách An toàn và Bảo mật</a> của chúng tôi
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact button -->
+    <div class="contact-btn">
+        <div class="contact-btn__chat contact-btn__item">
+            <a href="">
+                <i class="bi bi-messenger"></i>
+            </a>
+        </div>
+
+        <div class="contact-btn__phone contact-btn__item">
+            <a href="+84123456789">
+                <i class="bi bi-telephone-fill"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- btn to the top -->
+    <div class="pull-up">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+    </div>
+
+    <!-- Slick slider -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/js/slickSlider.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

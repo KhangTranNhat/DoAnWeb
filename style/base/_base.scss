@@ -1,0 +1,36 @@
+@import '../base/mixins';
+@import '../base/variables';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: $main-font !important;
+    color: $text-black;
+    background-color: $bg-gray;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column
+  }
+.main {
+    @include grid-box;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.main-contact {
+  @include grid-box;
+  
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.error-message{
+  color: red;
+  font-size: 14px;
+}

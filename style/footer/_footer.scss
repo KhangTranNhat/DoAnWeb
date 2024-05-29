@@ -1,0 +1,48 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+footer{
+    color: #737373;
+   
+    background-color: #26272b;
+    width: 100%;
+    padding-top: 20px ;
+    a{
+        text-decoration: none;
+    }
+}
+.footer-content{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #737373;
+    @include grid-box;
+    display: grid;
+    grid-template-columns:  450px auto auto auto;
+    gap: 20px;
+    h3{
+        font-size: 20px;
+        color: white;
+        p{
+            text-align: justify;
+        }
+    }
+    h5{
+        font-size: 20px;
+        color: white;
+    }
+    a{
+        color: #737373;
+        &:hover{
+            color: $primary-color;
+            opacity: 0.8;
+        }
+    }
+    .item{
+        ul{
+            padding: 0;
+        }
+    }
+}
+.footer-bot{
+    height: 40px;
+    @include grid-box;
+}

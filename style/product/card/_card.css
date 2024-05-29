@@ -1,0 +1,42 @@
+.card {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  gap: 5px;
+  padding: 10px;
+  margin: auto;
+  max-width: 200px;
+  max-height: 400px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.1), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
+}
+
+.card__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card__content .cart-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.card__botoom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card__botoom .rating-star {
+  color: yellow;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card__botoom .rating-star li {
+  padding: 2px;
+}
+
+.card__botoom .bi-heart {
+  color: red;
+}

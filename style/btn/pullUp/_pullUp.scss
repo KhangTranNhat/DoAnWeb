@@ -1,0 +1,17 @@
+@import "../../base/variables";
+
+.pull-up {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    float: right;
+    cursor: pointer;
+    
+    i {
+        padding: 10px;
+       
+        border-radius: 50%;
+        color: $primary-color;
+        font-size: 3rem;
+    }
+}

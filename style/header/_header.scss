@@ -1,0 +1,125 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $primary-color;
+    z-index: 1000;
+}
+
+.header__content {
+    @include grid-box;
+    max-height: $height-content;
+    .row{
+        @include flex-box;
+}
+
+    .logo-img {
+        @include logo;
+    }
+
+    &-right{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .search-box{
+
+            
+        .search__container {
+            @include flex-box;
+            width: 100%;
+            width: 400px;
+            margin: auto;
+         
+            .search__input {
+                width: 100%;
+                padding: $spacing-sm $spacing-md;
+                border: none;
+                border-radius: $border-radius-md;
+                outline: none;
+                font-size: border-radius-md;
+
+                &::placeholder {
+                    color: $search-color;
+                }
+            }
+            .bi-search{
+                font-size: $font-size-md;
+                background-color: $bg-white;
+                margin-left: -40px;
+                color: $search-color;
+                cursor: $main-cursor;
+            }
+            }
+
+        }
+        .auth-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .bi-bag, .bi-person-circle{
+                font-size: 30px;
+                color: $white-color;
+            }
+            .item{
+                padding-left: $spacing-sm;
+                @include flex-box;
+                
+                span{
+                    font-size: $font-size-md;
+                    color: $text-white;
+                    padding-left: $spacing-sm ;
+                }
+
+                button{
+                    padding-left: $spacing-md;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                &:hover{
+                    opacity: $opacity;
+                }
+                span{
+                    font-size: $font-size-md;
+                    color: $text-white;
+                    padding-left: $spacing-sm ;
+                }
+                }
+            }
+        }
+    }
+}
+
+.nav-bar {
+    @include flex-box;
+
+    .nav-bar-items {
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            a {
+                display: inline-block;
+                font-size: $font-size-md;
+                color: $bg-white;
+                text-decoration: none;
+                line-height: 70px;
+                padding: 0 20px;
+            }
+        }
+
+        li.active, li:hover {
+            a {
+                background-color: $bg-white;
+                color: $primary-color;
+            }
+        }
+    }
+}

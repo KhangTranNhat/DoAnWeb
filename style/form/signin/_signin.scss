@@ -1,0 +1,104 @@
+@import "../../base/mixins";
+@import "../../base/variables";
+
+.modal-content {
+	padding: $spacing-sm $spacing-sm;
+
+}
+.modal-header {
+	justify-content: space-between;
+	border-bottom: unset !important;
+    .active{
+        color:$primary-color ;
+        cursor: pointer;
+    }
+}
+.modal-body {
+	margin-top: $spacing-sm;
+    @include flex-box;
+    flex-direction: column;
+    
+	.btn-submit {
+		width: 100%;
+        max-width: 150px;
+		margin-top: 12px;
+		font-size: $h2;
+        color: $text-white;
+        background-color: $primary-color !important;
+        &:hover{
+            opacity: $opacity;
+            color: $text-white;
+        }
+        
+	}
+    .forget-pw{
+        flex: unset;
+        width: 100%;
+        max-width: 400px;
+        p{
+            float: right;
+            color: $text-gray;
+            &:hover{
+                color:$primary-color ;
+            }
+            cursor: pointer;
+        }
+    }
+}
+.modal-input {
+  width: 400px;
+	label {
+		display: block;
+		margin-bottom: 4px;
+		font-size: $h3;
+        
+	}
+	input{
+        border: none;
+		width: 100%;
+		padding: 16px 10px;
+		margin-bottom: 8px;
+		font-size: $h4;
+        border-bottom: 1px solid $text-gray !important ;
+        &:focus{
+            outline: none;
+            border-color:  $primary-color !important  ;
+            &::placeholder{
+                color: $primary-color;
+            }
+        }
+        
+	}
+   
+}
+.social-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	a {
+		display: block;
+		width: 25px;
+		height: 25px;
+		&:nth-child(2) {
+			margin: 0 15px;
+		}
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+}
+.modal-footer {
+	border-top: unset !important;
+	text-align: center;
+	p {
+		font-size: 1.2rem;
+	}
+}
+
+.valid {
+	color: green;
+}
+.invalid {
+	color: red;
+}

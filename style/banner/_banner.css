@@ -1,0 +1,61 @@
+.banner {
+  height: 380px;
+}
+
+.banner .card {
+  height: 100%;
+}
+
+.banner .card-content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.banner .slick-list {
+  height: 100%;
+}
+
+.banner .slick-list .slick-track {
+  height: 100%;
+}
+
+.banner .slick-list .slick-track .card {
+  background-color: unset;
+}
+
+.banner .slick-arrow {
+  display: none !important;
+}
+
+.banner .slick-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.banner .slick-dots li {
+  font-size: 0;
+  margin: 10px;
+}
+
+.banner .slick-dots li button {
+  padding: 5px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--bs-gray-500);
+}
+
+.banner .slick-dots li.slick-active button {
+  background-color: var(--bs-white);
+}
